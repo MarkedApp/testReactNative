@@ -3,7 +3,7 @@ import { Button } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default class App extends React.Component {
-  <Button
+  <Button style={styles.button}
     onPress = {onPressLearnMore}
     title = "Learn More!";
     color = "#841584"
@@ -11,8 +11,8 @@ export default class App extends React.Component {
   />
   
   //if-else inline statement => {condition ? true : false} (mindblown)
-  {{onPressLearnMore} = yes? (
-  	render(){
+  render(){
+    { 
     	return(
       	<View style={styles.container}>
       		<text>Oh noes, it's in english now!</text>
@@ -41,4 +41,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  button: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  }
 });
