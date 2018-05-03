@@ -10,6 +10,7 @@ export default class App extends React.Component {
     accessibilityLabel = "Learn more about this purple button!"
   />
   
+  //if-else inline statement => {condition ? true : false} (mindblown)
   {{onPressLearnMore} = yes? (
   	render(){
     	return(
