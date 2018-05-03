@@ -14,8 +14,9 @@ export default class App extends React.Component {
   	render(){
     	return(
       	<View style={styles.container}>
-      	
-      
+      		<text>Oh noes, it's in english now!</text>
+          <text>Please, go back to italian!</text>
+      		<text>I can't understand a thing that I'm saying..</text>
       	</View>
     	)
   	}
