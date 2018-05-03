@@ -10,7 +10,7 @@ export default class App extends React.Component {
     accessibilityLabel = "Learn more about this purple button!"
   />
   
-  if({onPressLearnMore} == yes){
+  {{onPressLearnMore} = yes? (
   	render(){
     	return(
       	<View style={styles.container}>
@@ -20,11 +20,8 @@ export default class App extends React.Component {
       	</View>
     	)
   	}
-  }
-	
-  
-  else {
-    render() {
+  	) : (
+		render() {
     	return (
       	<View style={styles.container}>
         	<Text>Il testo è stato cambiato!</Text>
@@ -33,6 +30,7 @@ export default class App extends React.Component {
       	</View>
     	);
   	}
+		)
 	}
 
 const styles = StyleSheet.create({
